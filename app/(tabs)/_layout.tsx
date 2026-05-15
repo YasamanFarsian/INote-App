@@ -39,14 +39,27 @@ export default function TabLayout() {
       {/* Hidden screens */}
 
       <Tabs.Screen
-        name="notes"
+        name="notesScreens"
         options={{
           href: null,
         }}
       />
 
       <Tabs.Screen
-        name="addNote"
+        name="addNoteScreesn"
+        options={{
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="listScrseen"
+        options={{
+          href: null,
+        }}
+      />
+
+      <Tabs.Screen
+        name="addListsScreen"
         options={{
           href: null,
         }}
