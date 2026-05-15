@@ -1,12 +1,12 @@
 import { router } from "expo-router";
 import { useEffect } from "react";
 import { ActivityIndicator, Text, View } from "react-native";
-import { Colors } from "../../constants/theme";
+import { tintColorLight } from "../../constants/theme";
 
 export default function Index() {
   useEffect(() => {
     setTimeout(() => {
-      router.replace("/notes");
+      router.replace("/listScreen");
     }, 3000);
   }, []);
 
@@ -16,7 +16,7 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: Colors.light.background,
+        backgroundColor: tintColorLight,
       }}
     >
       <Text
@@ -24,12 +24,13 @@ export default function Index() {
           fontSize: 40,
           fontWeight: "bold",
           marginBottom: 20,
+          color: "#fff",
         }}
       >
         iNote
       </Text>
 
-      <ActivityIndicator size="large" />
+      <ActivityIndicator size="large" color="#ff7a00" />
     </View>
   );
 }

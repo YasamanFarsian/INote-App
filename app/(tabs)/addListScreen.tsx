@@ -9,7 +9,7 @@ type Note = {
   text: string;
 };
 
-export default function AddNoteScreen() {
+export default function AddListScreen() {
   const [text, setText] = useState("");
   const [notes, setNotes] = useState<Note[]>([]);
 
@@ -69,7 +69,7 @@ export default function AddNoteScreen() {
           alignItems: "center",
         })}
       >
-        <Text style={{ color: "#fff", fontWeight: "600" }}>Add Note</Text>
+        <Text style={{ color: "#fff", fontWeight: "600" }}>Make a List</Text>
       </Pressable>
 
       <Text style={{ marginTop: 20 }}>Notes count: {notes.length}</Text>
